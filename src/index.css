@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Top page CSS */
+
+.center-image {
+  display:flex;
+  justify-content:center; /* horizontally center */
+  align-items:center;    /* vertically center */
+}
+
+.iris {
+  background-image: url('images/walking-in-the-forest.jpg');
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
+/* END */
