@@ -47,3 +47,12 @@ code {
 }
 
 /* END */
+
+/* Content page CSS */
+
+.small-image-in-card {
+    width: 300px !important;
+    height: 200px !important;
+}
+
+/* END */

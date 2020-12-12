@@ -8,10 +8,11 @@ export default function TopSectionComponent() {
             <div className="center-align white-text">
                 <div>
                     <h1 className="text-darken-1">A Jornada</h1>
-                    <h5 className="text-darken-1">O ponto de partida para você se tornar gente de verdade</h5></div>
+                    <h4 className="text-darken-1">O ponto de partida para você se tornar gente de verdade</h4>
+                </div>
 
                 <div>
-                    <h2 className="flow-text"><strong>Dias 12, 13 e 14 de dezembro, às 21 h, gratuitamente no Instagram <a href="http://instagram.com/rebecca.athayde">@rebecca.athayde</a></strong></h2>
+                    <h6 className="flow-text"><strong>Dias 11, 12 e 13 de dezembro, às 21 h, gratuitamente no Instagram <a href="http://instagram.com/rebecca.athayde">@rebecca.athayde</a></strong></h6>
                 </div>
 
                 <div className="dividers-container responsive-img">
@@ -43,6 +44,9 @@ export default function TopSectionComponent() {
                                 <input id="email" type="email" className="validate"/>
                                 <label htmlFor="email">Seu melhor email</label>
                             </div>
+                        </div>
+                        <div className="row">
+                            <button class="btn waves-effect waves-light orange" type="submit" name="action">Iniciar a minha jornada</button>
                         </div>
                     </form>
                 </div>
