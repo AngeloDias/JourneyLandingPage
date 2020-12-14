@@ -50,6 +50,8 @@ export default function ContentSectionComponent() {
                     </div>
                 </div>
             </div>
+
+            <div className="row"></div>
         </div>
     )
 }
