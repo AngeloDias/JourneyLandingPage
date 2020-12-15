@@ -52,7 +52,29 @@ export default function ContentSectionComponent() {
 
             </div>
 
-            <div className="row"></div>
+            <div className="row center">
+                <div className="col s12 m4"></div>
+
+                <div className="col s12 m4">
+
+                    <div className="social-media-icons">
+                        <div>
+                            <a className="waves-effect waves-light social-icon btn instagram black-instagram" href="#3">
+                                <i className="fab fa-instagram"></i>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a className="waves-effect waves-light social-icon btn youtube red-youtube" href="#3">
+                                <i className="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div className="col s12 m4"></div>
+            </div>
         </div>
     )
 }
