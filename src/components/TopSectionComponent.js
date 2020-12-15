@@ -52,7 +52,7 @@ export default function TopSectionComponent() {
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <button className="btn waves-effect waves-orange orange btn-to-width" type="submit" name="action">Iniciar a minha jornada</button>
+                                    <button className="btn waves-effect waves-orange orange btn-to-width col s12" type="submit" name="action">Iniciar a minha jornada</button>
                                 </div>
                             </form>
                         </div>
