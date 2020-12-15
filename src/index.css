@@ -77,7 +77,8 @@ code {
 }
 
 .social-media-icons {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 /* END */
