@@ -9,7 +9,6 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-
 /* Top page CSS */
 
 .center-image {
@@ -36,6 +35,8 @@ code {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 4%;
+    padding-bottom: 2%;
 }
 
 .h2-description-normal {
@@ -44,6 +45,18 @@ code {
 
 .h2-description-small {
     font-size: 15px !important;
+}
+
+.wrapper-content {
+    padding: 13px !important;
+}
+
+.p-subscribe-asking {
+    font-size: 15px !important;
+}
+
+.input-to-blank {
+    background-color: white;
 }
 
 /* END */
