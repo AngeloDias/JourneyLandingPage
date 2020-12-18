@@ -9,6 +9,9 @@ $_POST = json_decode($rest_json, true);
 
 $errors = array();
 
+$email = '';
+$first_name = '';
+
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
     if (empty($_POST['email'])) {
         $errors[] = 'Email is empty';
@@ -53,6 +56,11 @@ if (empty($errors)) {
     $to = $email; //'contact@example.com';
     $subject = 'Contacting you';
 
+    // References to configure SwiftMailer
+    // https://blog.mailtrap.io/swiftmailer-sendmail/
+    // https://blog.mailtrap.io/send-emails-in-symfony/
+    // https://blog.mailtrap.io/php-email-sending/
+    // https://blog.mailtrap.io/test-emails-in-php/
     if (mail($to, $subject, $emailBody, $headers)) {
         $sent = true;
     }
