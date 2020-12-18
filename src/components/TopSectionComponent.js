@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+
+const PHP_FILE_PATH = 'http://localhost:3002/journey-landing-page/src/php/index.php';
 
 export default class TopSectionComponent extends Component {
     state = {
         first_name: null,
-        email: null
+        email: null,
+        mail_sent: false,
+        error: null
     }
 
     handleChange = (event) => {
@@ -22,27 +27,20 @@ export default class TopSectionComponent extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
 
-        fetch('http://localhost:3000', {
-            method: "POST",
-            body: JSON.stringify(this.state),
-
+        axios({
+            method: 'POST',
+            url: `${PHP_FILE_PATH}`,
             headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            }
+                'content-type': 'application/json'
+            },
+            data: this.state
         })
-            .then(
-                (response) => (response.json())
-            )
-            .then(
-                (response) => {
-                    if (response.status === 'success') {
-                        alert("Message Sent!");
-                        this.resetForm()
-                    } else if (response.status === 'fail') {
-                        alert("Message failed to send!")
-                    }
+            .then(result => {
+                this.setState({
+                    mail_sent: result.data.sent
                 })
+            })
+            .catch(error => this.setState({ error: error.message }));
     }
 
     render() {
@@ -99,6 +97,10 @@ export default class TopSectionComponent extends Component {
 
                                     <div className="row">
                                         <button className="btn waves-effect waves-orange orange btn-to-width col s12" type="submit" name="action">Iniciar a minha jornada</button>
+                                    </div>
+
+                                    <div>
+                                        {this.state.mailSent && <div>Thank you for contcting us.</div>}
                                     </div>
                                 </form>
                             </div>

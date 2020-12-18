@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import TopEmailSectionComponent from './TopEmailSectionComponent';
 
+/* Build single page app with Symfony and React */
+// https://www.twilio.com/blog/building-a-single-page-application-with-symfony-php-and-react
+/*  */
+
 /* Reference to create form to create form using React */
-// https://blog.mailtrap.io/react-contact-form/#How_do_you_create_a_contact_form_with_React
+// https://blog.mailtrap.io/react-contact-form/
 
 /* Reference to send email using emailjs.com */
 // https://blog.mailtrap.io/react-send-email/

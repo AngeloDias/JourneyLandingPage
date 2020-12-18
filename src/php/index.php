@@ -1,4 +1,5 @@
 <?php
+echo 'hello world';
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: Content-Type");
 header("Content-Type: application/json");
@@ -23,6 +24,8 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
 }
 
 if (empty($errors)) {
+    http_response_code(200);
+
     $date = date('j, F Y h:i A');
     
     $emailBody = "
@@ -47,13 +50,19 @@ if (empty($errors)) {
     "MIME-Version: 1.0\r\n" . 
     "Content-Type: text/html; charset=iso-8859-1\r\n";
 
-    $to = 'contact@example.com';
+    $to = $email; //'contact@example.com';
     $subject = 'Contacting you';
 
     if (mail($to, $subject, $emailBody, $headers)) {
         $sent = true;
     }
 
+} else {
+    echojson_encode(
+        [
+            "sent" => false,
+            "message" => "Something went wrong"
+        ]);
 }
 ?>
 
