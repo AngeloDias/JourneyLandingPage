@@ -36,8 +36,8 @@ if (empty($errors)) {
     <head>
       <title>$email is contacting you</title>
     </head>
-    <body style=\"background-color:#fafafa;\">
-      <div style=\"padding:20px;\">
+    <body>
+      <div>
         Date: <span style=\"color:#888\">$date</span>
         <br>
         Email: <span style=\"color:#888\">$email</span>
