@@ -64,6 +64,7 @@ if (empty($errors)) {
     // https://blog.mailtrap.io/send-emails-in-symfony/
     // https://blog.mailtrap.io/php-email-sending/
     // https://blog.mailtrap.io/test-emails-in-php/
+    
     if (mail($to, $subject, $emailBody, $headers)) {
         $sent = true;
     }
