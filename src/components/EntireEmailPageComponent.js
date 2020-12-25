@@ -5,7 +5,6 @@ import TopEmailSectionComponent from './TopEmailSectionComponent';
 // https://github.com/malithmcr/react-php-contact-form
 
 /* Reference to create form to create form using React */
-// https://blog.mailtrap.io/react-contact-form/
 
 /* Reference to send email using emailjs.com */
 // https://blog.mailtrap.io/react-send-email/
