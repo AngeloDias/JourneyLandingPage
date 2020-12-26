@@ -1,0 +1,12 @@
+version: '1'
+
+services:
+  web:
+
+  php:
+
+  app:
+
+networks:
+  code-network:
+    driver: bridge
