@@ -10,6 +10,11 @@ services:
     - code-network
 
   php:
+    image: php:fpm
+    volumes:
+      - ./api:/api
+    networks:
+      - code-network
 
   app:
 
