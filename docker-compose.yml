@@ -17,6 +17,13 @@ services:
       - code-network
 
   app:
+    build:
+      context: ./
+      command: yarn start
+    volumes:
+
+    ports:
+      - "3000:3000"
 
 networks:
   code-network:
