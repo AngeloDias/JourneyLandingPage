@@ -17,13 +17,13 @@ $first_name = '';
 
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
     if (empty($_POST['email'])) {
-        $errors[] = 'Email is empty';
+        $errors[] = 'The email is empty';
     } else {
         $email = $_POST['email'];
     }
     
     if (empty($_POST['first_name'])) {
-        $errors[] = 'First name is empty';
+        $errors[] = 'The first name is empty';
     } else {
         $first_name = $_POST['first_name'];
     }
