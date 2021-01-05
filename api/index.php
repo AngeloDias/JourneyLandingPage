@@ -7,7 +7,7 @@ header("Content-Type: application/json");
 // Reference to study Docker
 // https://www.youtube.com/watch?v=j9vfSaCIyPI&list=PLXzx948cNtr8N5zLNJNVYrvIG6hk0Kxl-
 
-$rest_json = file_get_contents("api/php://input");
+$rest_json = file_get_contents("php://input");
 $_POST = json_decode($rest_json, true);
 
 $errors = array();

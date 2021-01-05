@@ -4,7 +4,7 @@ WORKDIR /usr/app
 
 COPY package*.json ./
 
-RUN npm ci -qy
+RUN yarn install --frozen-lockfile
 
 COPY . .
 
