@@ -1,6 +1,6 @@
 services:
   web:
-    image: nginx:latest
+    image: nginx:alpine
     ports:
       - "8080:80"
     volumes:
