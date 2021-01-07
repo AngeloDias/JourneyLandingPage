@@ -10,7 +10,7 @@ services:
       - code-network
 
   php:
-    image: php:fpm
+    image: php:fpm-alpine
     volumes:
       - ./api:/api
     networks:
