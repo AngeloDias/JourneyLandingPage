@@ -2,7 +2,7 @@
 echo 'hello world';
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: Content-Type");
-// header("Content-Type: application/json");
+header("Content-Type: application/json");
 
 // Reference to study Docker
 // https://www.youtube.com/watch?v=j9vfSaCIyPI&list=PLXzx948cNtr8N5zLNJNVYrvIG6hk0Kxl-
