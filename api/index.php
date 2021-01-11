@@ -1,6 +1,6 @@
 <?php
-echo 'hello world';
 header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: POST, GET");
 header("Access-Control-Allow-Headers: Content-Type");
 header("Content-Type: application/json");
 
@@ -105,3 +105,4 @@ if (empty($errors)) {
     "Content-Type: text/plain; charset=iso-8859-1\r\n";
 
     mail($email, $email_subject, $email_message, $headers);
+    echo json_encode(array("sent" => true));
