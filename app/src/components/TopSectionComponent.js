@@ -32,7 +32,7 @@ export default class TopSectionComponent extends Component {
             method: 'POST',
             url: `${PHP_FILE_PATH}`,
             headers: {
-                'content-type': 'application/json'
+                'Content-Type': 'application/json'
             },
             data: this.state
         })

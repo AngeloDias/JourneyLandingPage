@@ -1,8 +1,8 @@
 <?php
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Methods: POST, GET");
-header("Access-Control-Allow-Headers: Content-Type");
-header("Content-Type: application/json");
+// header("Access-Control-Allow-Origin: http://127.0.0.1:3000");
+// header("Access-Control-Allow-Methods: POST");
+// header("Access-Control-Allow-Headers: Content-Type");
+// header('Content-Type: application/json');
 
 // Reference to study Docker
 // https://www.youtube.com/watch?v=j9vfSaCIyPI&list=PLXzx948cNtr8N5zLNJNVYrvIG6hk0Kxl-
@@ -105,4 +105,3 @@ if (empty($errors)) {
     "Content-Type: text/plain; charset=iso-8859-1\r\n";
 
     mail($email, $email_subject, $email_message, $headers);
-    echo json_encode(array("sent" => true));
