@@ -70,7 +70,7 @@ if (empty($errors)) {
     }
 
 } else {
-    echojson_encode(
+    echo json_encode(
         [
             "sent" => false,
             "message" => "Something went wrong"
@@ -105,3 +105,4 @@ if (empty($errors)) {
     "Content-Type: text/plain; charset=iso-8859-1\r\n";
 
     mail($email, $email_subject, $email_message, $headers);
+    echo("Email sent");
