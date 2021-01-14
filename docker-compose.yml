@@ -16,6 +16,16 @@ services:
     networks:
       - code-network
 
+  symfony:
+    image: symfonycorp/cli:latest
+    command: symfony server:start
+    volumes:
+      - ./symfony:/symfony
+    networks:
+      - code-network
+    depends_on:
+      - php
+
   app:
     build:
       context: ./app/

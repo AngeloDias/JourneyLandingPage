@@ -29,3 +29,71 @@ app/node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+###> symfony/framework-bundle ###
+symfony/local_mail_server/.env
+symfony/local_mail_server/.env.local
+symfony/local_mail_server/.env.local.php
+symfony/local_mail_server/.env.*.local
+symfony/local_mail_server/config/secrets/prod/prod.decrypt.private.php
+symfony/local_mail_server/public/bundles/
+symfony/local_mail_server/var/
+symfony/local_mail_server/vendor/
+###< symfony/framework-bundle ###
+
+###> symfony/phpunit-bridge ###
+symfony/local_mail_server/.phpunit
+symfony/local_mail_server/.phpunit.result.cache
+symfony/local_mail_server/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+# Cache and logs (Symfony2)
+symfony/local_mail_server/app/cache/*
+symfony/local_mail_server/app/logs/*
+symfony/local_mail_server/!app/cache/.gitkeep
+symfony/local_mail_server/!app/logs/.gitkeep
+
+# Email spool folder
+symfony/local_mail_server/app/spool/*
+
+# Cache, session files and logs (Symfony3)
+symfony/local_mail_server/var/cache/*
+symfony/local_mail_server/var/logs/*
+symfony/local_mail_server/var/sessions/*
+symfony/local_mail_server/!var/cache/.gitkeep
+symfony/local_mail_server/!var/logs/.gitkeep
+symfony/local_mail_server/!var/sessions/.gitkeep
+
+# Logs (Symfony4)
+symfony/local_mail_server/var/log/*
+symfony/local_mail_server/!var/log/.gitkeep
+
+# Parameters
+symfony/local_mail_server/app/config/parameters.yml
+symfony/local_mail_server/app/config/parameters.ini
+
+# Managed by Composer
+symfony/local_mail_server/app/bootstrap.php.cache
+symfony/local_mail_server/var/bootstrap.php.cache
+symfony/local_mail_server/bin/*
+symfony/local_mail_server/!bin/console
+symfony/local_mail_server/!bin/symfony_requirements
+
+# Assets and user uploads
+symfony/local_mail_server/web/bundles/
+symfony/local_mail_server/web/uploads/
+
+# PHPUnit
+symfony/local_mail_server/app/phpunit.xml
+
+# Build data
+symfony/local_mail_server/build/
+
+# Composer PHAR
+symfony/local_mail_server/composer.phar
+
+# Backup entities generated with doctrine:generate:entities command
+symfony/local_mail_server/**/Entity/*~
+
+# Embedded web-server pid file
+symfony/local_mail_server/.web-server-pid
