@@ -31,7 +31,7 @@ yarn-debug.log*
 yarn-error.log*
 
 ###> symfony/framework-bundle ###
-symfony/local_mail_server/.env
+# symfony/local_mail_server/.env
 symfony/local_mail_server/.env.local
 symfony/local_mail_server/.env.local.php
 symfony/local_mail_server/.env.*.local
