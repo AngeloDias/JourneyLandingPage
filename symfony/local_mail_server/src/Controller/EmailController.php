@@ -7,15 +7,13 @@ use Swift_Mailer;
 use Swift_Message;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Annotation\Route;
 
+// Could it help to implement the mailing server?
+// https://symfony.com/doc/current/components/http_foundation.html
 class EmailController extends AbstractController
 {
-    /**
-     * Mudar!!!
-     * @Route("/email", name="email")
-     */
     public function indexAction(Request $request, Swift_Mailer $mailer)
     {
         $email = new Email();
@@ -44,8 +42,14 @@ class EmailController extends AbstractController
             }
         }
 
-        return $this->render('base.html.twig', [
-            'form' => $form->createView()
-        ]);
+        // return $this->render('base.html.twig', [
+        //     'form' => $form->createView()
+        // ]);
+
+        return new Response(
+            'Content',
+            Response::HTTP_OK,
+            ['content-type' => 'application/json']
+        );
     }
 }
