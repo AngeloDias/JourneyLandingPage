@@ -42,10 +42,6 @@ class EmailController extends AbstractController
             }
         }
 
-        // return $this->render('base.html.twig', [
-        //     'form' => $form->createView()
-        // ]);
-
         return new Response(
             'Content',
             Response::HTTP_OK,
